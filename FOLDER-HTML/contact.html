@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - PT. Abizaros Terradrill</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-logo">
+          <a href="index.html">
+            <img src="logo.png" alt="Logo" class="logo-img" />
+            <span>PT. Abizaros Terradrill</span>
+          </a>
+        </div>
+        <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle" />
+        <label for="hamburger-toggle" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <h1>Hubungi Kami</h1>
+      <p>Kami siap membantu Anda mendapatkan solusi terbaik</p>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+      <div class="container">
+        <div class="contact-wrapper">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h2>Informasi Kontak</h2>
+
+            <div class="info-item">
+              <h3>📍 Alamat</h3>
+              <p>
+                PT. Abizaros Terradrill<br />
+                Jl. Raya Industri No. 123<br />
+                Jakarta Timur, 13920<br />
+                Indonesia
+              </p>
+            </div>
+
+            <div class="info-item">
+              <h3>📞 Telepon</h3>
+              <p>
+                Kantor: +62 (0) 21-5555-1234<br />
+                Sales: +62 (0) 812-3456-7890<br />
+                Support: +62 (0) 812-9876-5432
+              </p>
+            </div>
+
+            <div class="info-item">
+              <h3>✉️ Email</h3>
+              <p>
+                General: info@abizaros.com<br />
+                Sales: sales@abizaros.com<br />
+                Support: support@abizaros.com
+              </p>
+            </div>
+
+            <div class="info-item">
+              <h3>⏰ Jam Operasional</h3>
+              <p>
+                Senin - Jumat: 08:00 - 17:00<br />
+                Sabtu: 08:00 - 12:00<br />
+                Minggu: Tutup<br />
+                <br />
+                <strong>Layanan Darurat 24/7 Tersedia</strong>
+              </p>
+            </div>
+
+            <div class="social-links">
+              <h3>Ikuti Kami</h3>
+              <div class="social-icons">
+                <a href="#" class="social-icon">f</a>
+                <a href="#" class="social-icon">𝕏</a>
+                <a href="#" class="social-icon">in</a>
+                <a href="#" class="social-icon">▶</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h2>Kirim Pesan Kepada Kami</h2>
+            <form method="POST" action="https://formspree.io/f/your_form_id">
+              <div class="form-group">
+                <label for="name">Nama Lengkap *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Nomor Telepon</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+
+              <div class="form-group">
+                <label for="company">Nama Perusahaan</label>
+                <input type="text" id="company" name="company" />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subjek *</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Pilih Subjek</option>
+                  <option value="sales">Sales Inquiry</option>
+                  <option value="support">Technical Support</option>
+                  <option value="maintenance">Maintenance & Service</option>
+                  <option value="rental">Rental & Leasing</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Pesan *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                  minlength="10"
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="checkbox">
+                  <input type="checkbox" name="privacy" required />
+                  Saya setuju dengan kebijakan privasi dan syarat layanan
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <h2>Lokasi Kami</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6433...&markers=color:red%7Clabel:PT.%20Abizaros%20Terradrill%7C-6.2500,106.8850"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Info -->
+    <section class="additional-info">
+      <div class="container">
+        <h2>Pertanyaan Umum (FAQ)</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h4>Bagaimana cara memesan peralatan?</h4>
+            <p>
+              Hubungi tim sales kami melalui telepon atau email, dan kami akan
+              membantu Anda memilih peralatan yang sesuai dengan kebutuhan
+              bisnis Anda.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>Apakah ada garansi untuk produk?</h4>
+            <p>
+              Ya, semua produk kami dilengkapi dengan garansi resmi dan program
+              extended warranty tersedia dengan harga terjangkau.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>Berapa lama waktu pengiriman?</h4>
+            <p>
+              Waktu pengiriman tergantung lokasi dan ketersediaan barang.
+              Biasanya pengiriman ke wilayah Jawa dapat dilakukan dalam 1-2
+              minggu.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>Apakah tersedia layanan maintenance?</h4>
+            <p>
+              Ya, kami menyediakan layanan maintenance berkala dan support
+              teknis 24/7 untuk memastikan peralatan Anda selalu dalam kondisi
+              optimal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>PT. Abizaros Terradrill</h4>
+          <p>
+            Supplier terpercaya untuk kebutuhan peralatan heavy equipment
+            pertambangan
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Hubungi Kami</h4>
+          <p>Email: info@abizaros.com</p>
+          <p>Phone: +62 (0) 123-4567</p>
+          <p>Address: Jakarta, Indonesia</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PT. Abizaros Terradrill. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
