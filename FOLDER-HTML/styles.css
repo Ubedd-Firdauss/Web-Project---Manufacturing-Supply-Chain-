@@ -78,7 +78,7 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.98);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(236, 236, 236, 0.8));
   backdrop-filter: blur(20px);
   z-index: 1000;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
@@ -94,12 +94,15 @@ p {
   align-items: center;
 }
 
-.logo h2 {
-  background: linear-gradient(135deg, #dc143c, #b22222);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.8rem;
-  font-weight: 800;
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 90px;
+  width: auto;
+  display: block;
 }
 
 .nav-menu {
@@ -133,6 +136,7 @@ p {
 .nav-link:hover::after,
 .nav-link.active::after {
   width: 100%;
+  background: gold;
 }
 
 .nav-link:hover,
@@ -154,7 +158,9 @@ p {
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(220, 20, 60, 0.4);
+  box-shadow: 0 8px 30px gold;
+  background: gold;
+  color: black;
 }
 
 /* ===========================================
@@ -285,6 +291,7 @@ p {
   background: white;
   color: #dc143c;
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
 }
 
 .btn-outline {
@@ -317,15 +324,14 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  margin-top : 5rem;
-  margin-bottom : 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .about-preview {
   padding: 3rem 0;
-  background: url('background-elegant (1).jpg') center/cover no-repeat;
+  background: url("background-elegant (1).jpg") center/cover no-repeat;
 }
-
 
 /* ===========================================
    ABOUT PREVIEW IMAGE CARD
@@ -352,6 +358,11 @@ p {
   object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
+}
+
+.image-card:hover {
+  box-shadow: 0 40px 80px #dc143c33;
+  border: 5px solid rgb(147, 1, 30);
 }
 
 .image-card:hover img {
@@ -383,6 +394,7 @@ p {
   color: #ffffff;
   font-size: 1.8rem;
   line-height: 1.1;
+  text-align: left;
 }
 
 .image-overlay p {
@@ -391,6 +403,102 @@ p {
   font-size: 1rem;
   line-height: 1.6;
   max-width: 88%;
+  text-align: left;
+}
+
+/* ABOUT PREVIEW IMAGE CARD */
+
+.services-preview {
+  padding: 4.5rem 0 5rem;
+  background: #f7f7f7;
+}
+
+.services-preview .services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+.service-card {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #111;
+  min-height: 420px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.14);
+  transition:
+  transform 0.35s ease,
+  box-shadow 0.35s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 34px 80px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  min-height: 260px;
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .card-image img {
+  transform: scale(1.06);
+}
+
+.service-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(10, 10, 10, 0.95));
+  transform: translateY(100%);
+  opacity: 0;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.service-card:hover .service-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.service-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: left;
+  text-align: left;
+  padding: 2rem;
+}
+
+.service-overlay p {
+  color: #fff;
+  align-items: left;
+  text-align: left;
+}
+
+.service-overlay h3 {
+  margin: 0 0 0.5rem;
+  color: #ffffff;
+  font-size: 1.8rem;
+  line-height: 1.1;
+  text-align: left;
 }
 
 @media (max-width: 1024px) {
@@ -408,10 +516,28 @@ p {
     max-width: 100%;
     min-height: 340px;
   }
+
+  .services-preview .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-preview .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
 }
 
 /* ===========================================
-   SIMPEL TIMELINE
+  KEY MILESTONES - TIMELINE
 ============================================ */
 .timeline {
   max-width: 800px;
@@ -567,6 +693,14 @@ p {
 @media (max-width: 768px) {
   .nav-menu {
     gap: 1.5rem;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .cta-button {
+    display: none;
   }
 
   .nav-container {
