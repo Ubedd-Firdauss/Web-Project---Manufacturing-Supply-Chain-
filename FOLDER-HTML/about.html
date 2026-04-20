@@ -5,66 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About - PT. Abizaros Terradrill</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Navigation Bar -->
+    <!-- Navbar -->
     <nav class="navbar">
-      <div class="navbar-container">
-        <div class="navbar-logo">
-          <a href="index.html">
-            <img src="logo.png" alt="Logo" class="logo-img" />
-            <span>PT. Abizaros Terradrill</span>
-          </a>
+      <div class="nav-container">
+        <div class="logo">
+          <h2>PT. Abizaros Terradrill</h2>
         </div>
-        <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle" />
-        <label for="hamburger-toggle" class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </label>
         <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link active">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="services.html" class="nav-link">Services</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
-          </li>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
+        <a href="contact.html" class="cta-button">Get Started</a>
       </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-      <h1>Tentang Kami</h1>
-      <p>Pelajari lebih lanjut tentang PT. Abizaros Terradrill</p>
+    <!-- Philosophy Section -->
+    <section class="philosophy">
+      <div class="container">
+        <h1 class="page-title">Our Philosophy</h1>
+        <div class="philosophy-grid">
+          <div class="philosophy-content">
+            <h2>Environmental Sustainability First</h2>
+            <p>
+              Kami berkomitmen pada green manufacturing dengan teknologi low
+              emission, electric equipment, dan praktik ESG yang ketat. Setiap
+              keputusan bisnis kami mempertimbangkan dampak lingkungan jangka
+              panjang.
+            </p>
+
+            <div class="values-grid">
+              <div class="value-item">
+                <h4>Integritas</h4>
+                <p>Transparansi total dalam setiap proses</p>
+              </div>
+              <div class="value-item">
+                <h4>Inovasi</h4>
+                <p>Teknologi terkini untuk efisiensi maksimal</p>
+              </div>
+              <div class="value-item">
+                <h4>Keselamatan</h4>
+                <p>Prioritas utama dalam setiap operasi</p>
+              </div>
+              <div class="value-item">
+                <h4>Keberlanjutan</h4>
+                <p>Membangun industri masa depan yang hijau</p>
+              </div>
+            </div>
+          </div>
+          <div class="philosophy-image">
+            <div class="image-placeholder large"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- About Content -->
-    <section class="about-content">
+    <!-- Vision Mission -->
+    <section class="vision-mission">
       <div class="container">
-        <div class="about-section">
-          <h2>Sejarah Perusahaan</h2>
-          <p>
-            PT. Abizaros Terradrill didirikan dengan visi menjadi pemasok
-            terkemuka peralatan heavy equipment untuk industri pertambangan di
-            Indonesia. Dengan pengalaman lebih dari 20 tahun, kami telah
-            melayani ratusan perusahaan pertambangan besar dengan komitmen
-            terhadap kualitas dan inovasi.
-          </p>
+        <h2 class="section-title">Vision & Mission</h2>
+        <div class="vm-grid">
+          <div class="vm-card">
+            <h3>Vision</h3>
+            <p>
+              Menjadi pemimpin global dalam produksi alat berat pertambangan
+              berkelanjutan yang mengubah paradigma industri menuju zero
+              emission.
+            </p>
+          </div>
+          <div class="vm-card">
+            <h3>Mission</h3>
+            <ul>
+              <li>Produksi peralatan low emission dan electric</li>
+              <li>Supply chain ramah lingkungan terintegrasi</li>
+              <li>Solusi inovatif untuk tantangan mining modern</li>
+              <li>Keselamatan kerja berstandar internasional</li>
+              <li>Hubungan jangka panjang dengan stakeholder</li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="about-section">
-          <h2>Visi & Misi</h2>
-          <div class="vision-mission">
-            <div class="vm-card">
-              <h3>Visi</h3>
+    <!-- Company History -->
+    <section class="history">
+      <div class="container">
+        <h2 class="section-title">Company History</h2>
+        <p class="section-desc">
+          Didirikan tahun 2015 sebagai spesialis heavy fabrication, Abizaros
+          Terradrill telah berevolusi menjadi pemimpin sustainability dalam
+          industri pertambangan. Transformasi besar terjadi tahun 2022 dengan
+          fokus green technology dan supply chain digital.
+        </p>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline">
+      <div class="container">
+        <h2 class="section-title">Key Milestones</h2>
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <div class="timeline-year">2015</div>
+            <div class="timeline-content">
+              <h4>Company Founded</h4>
               <p>
+<<<<<<< HEAD
                 Menjadi pemimpin global dalam pengembangan alat berat pertambangan berkelanjutan yang mendefinisikan standar baru industri.
               </p>
             </div>
@@ -74,86 +129,77 @@
                 Mengembangkan alat berat rendah emisi dengan efisiensi dan kinerja tinggi.<br>
                 Membangun rantai pasok berkelanjutan yang terintegrasi dan bertanggung jawab.<br>
                 Menghadirkan solusi inovatif untuk meningkatkan produktivitas, keselamatan, dan efisiensi operasional.
+=======
+                PT. Abizaros Terradrill berdiri sebagai heavy fabrication
+                specialist
+>>>>>>> 9afa65d (Perubahan Thema/Template (Kali Ini Fix Ini Tema nya))
               </p>
             </div>
           </div>
-        </div>
-
-        <div class="about-section">
-          <h2>Nilai-Nilai Kami</h2>
-          <div class="values-grid">
-            <div class="value-item">
-              <h4>Integritas</h4>
-              <p>
-                Berkomitmen pada kejujuran dan transparansi dalam setiap
-                transaksi bisnis
-              </p>
-            </div>
-            <div class="value-item">
-              <h4>Kualitas</h4>
-              <p>
-                Memastikan setiap produk dan layanan memenuhi standar tertinggi
-              </p>
-            </div>
-            <div class="value-item">
-              <h4>Inovasi</h4>
-              <p>
-                Terus berinovasi untuk memberikan solusi terbaik kepada
-                pelanggan
-              </p>
-            </div>
-            <div class="value-item">
-              <h4>Keandalan</h4>
-              <p>
-                Menjadi mitra andal yang dapat diandalkan dalam jangka panjang
-              </p>
+          <div class="timeline-item">
+            <div class="timeline-year">2018</div>
+            <div class="timeline-content">
+              <h4>First Production</h4>
+              <p>Produksi drill rig pertama untuk tambang batubara</p>
             </div>
           </div>
-        </div>
-
-        <div class="about-section">
-          <h2>Statistik Kami</h2>
-          <div class="stats-grid">
-            <div class="stat-card">
-              <div class="stat-number">500+</div>
-              <div class="stat-label">Klien Puas</div>
+          <div class="timeline-item">
+            <div class="timeline-year">2021</div>
+            <div class="timeline-content">
+              <h4>Mining Expansion</h4>
+              <p>Ekspansi ke peralatan nikel dan emas</p>
             </div>
-            <div class="stat-card">
-              <div class="stat-number">20+</div>
-              <div class="stat-label">Tahun Pengalaman</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2023</div>
+            <div class="timeline-content">
+              <h4>Green Technology</h4>
+              <p>Peluncuran electric drill rig pertama di Indonesia</p>
             </div>
-            <div class="stat-card">
-              <div class="stat-number">1000+</div>
-              <div class="stat-label">Peralatan Terjual</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-number">24/7</div>
-              <div class="stat-label">Dukungan Pelanggan</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-content">
+              <h4>Global Supply Chain</h4>
+              <p>Go international dengan supply chain modern</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team-section">
+    <!-- Resources -->
+    <section class="resources">
       <div class="container">
-        <h2>Tim Kami</h2>
-        <div class="team-grid">
-          <div class="team-member">
-            <img src="team-1.jpg" alt="Team Member" />
-            <h3>Budi Santoso</h3>
-            <p>CEO & Founder</p>
+        <h2 class="section-title">Our Resources</h2>
+        <div class="resources-grid">
+          <div class="resource-category">
+            <h3>Equipment</h3>
+            <ul>
+              <li>CNC Precision Machines</li>
+              <li>Heavy Fabrication Lines</li>
+              <li>Automation & IoT Systems</li>
+              <li>Energy-efficient Assembly</li>
+            </ul>
           </div>
-          <div class="team-member">
-            <img src="team-2.jpg" alt="Team Member" />
-            <h3>Siti Nurhaliza</h3>
-            <p>Operations Manager</p>
+          <div class="resource-category">
+            <h3>Facilities</h3>
+            <ul>
+              <li>Modern Factory (50.000 m²)</li>
+              <li>Advanced Workshop</li>
+              <li>Smart Warehouse</li>
+              <li>R&D Center</li>
+              <li>Solar Panel System</li>
+            </ul>
           </div>
-          <div class="team-member">
-            <img src="team-3.jpg" alt="Team Member" />
-            <h3>Ahmad Wijaya</h3>
-            <p>Technical Director</p>
+          <div class="resource-category">
+            <h3>Manpower</h3>
+            <ul>
+              <li>150+ Engineers</li>
+              <li>300+ Technicians</li>
+              <li>Certified Operators</li>
+              <li>Professional Management</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -161,32 +207,25 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h4>PT. Abizaros Terradrill</h4>
-          <p>
-            Supplier terpercaya untuk kebutuhan peralatan heavy equipment
-            pertambangan
-          </p>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>PT. Abizaros Terradrill</h3>
+            <p>Membangun masa depan pertambangan yang berkelanjutan.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-section">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <div class="footer-bottom">
+          <p>&copy; 2026 PT. Abizaros Terradrill. All rights reserved.</p>
         </div>
-        <div class="footer-section">
-          <h4>Hubungi Kami</h4>
-          <p>Email: info@abizaros.com</p>
-          <p>Phone: +62 (0) 123-4567</p>
-          <p>Address: Jakarta, Indonesia</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 PT. Abizaros Terradrill. All rights reserved.</p>
       </div>
     </footer>
   </body>
