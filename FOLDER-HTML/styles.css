@@ -78,11 +78,7 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-<<<<<<< HEAD
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(236, 236, 236, 0.8));
-=======
-  background: rgba(255, 255, 255, 0.98);
->>>>>>> 9afa65d8d91e4a2952a7d6290560ebcda4abca6c
   backdrop-filter: blur(20px);
   z-index: 1000;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
@@ -98,7 +94,6 @@ p {
   align-items: center;
 }
 
-<<<<<<< HEAD
 .logo {
   display: inline-flex;
   align-items: center;
@@ -108,14 +103,6 @@ p {
   max-height: 90px;
   width: auto;
   display: block;
-=======
-.logo h2 {
-  background: linear-gradient(135deg, #dc143c, #b22222);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.8rem;
-  font-weight: 800;
->>>>>>> 9afa65d8d91e4a2952a7d6290560ebcda4abca6c
 }
 
 .nav-menu {
@@ -149,10 +136,7 @@ p {
 .nav-link:hover::after,
 .nav-link.active::after {
   width: 100%;
-<<<<<<< HEAD
   background: gold;
-=======
->>>>>>> 9afa65d8d91e4a2952a7d6290560ebcda4abca6c
 }
 
 .nav-link:hover,
@@ -174,13 +158,9 @@ p {
 
 .cta-button:hover {
   transform: translateY(-2px);
-<<<<<<< HEAD
   box-shadow: 0 8px 30px gold;
   background: gold;
   color: black;
-=======
-  box-shadow: 0 8px 25px rgba(220, 20, 60, 0.4);
->>>>>>> 9afa65d8d91e4a2952a7d6290560ebcda4abca6c
 }
 
 /* ===========================================
@@ -311,10 +291,7 @@ p {
   background: white;
   color: #dc143c;
   transform: translateY(-2px);
-<<<<<<< HEAD
   box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
-=======
->>>>>>> 9afa65d8d91e4a2952a7d6290560ebcda4abca6c
 }
 
 .btn-outline {
@@ -347,27 +324,15 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-<<<<<<< HEAD
   margin-top: 5rem;
   margin-bottom: 5rem;
-=======
-  margin-top : 5rem;
-  margin-bottom : 5rem;
->>>>>>> 9afa65d8d91e4a2952a7d6290560ebcda4abca6c
 }
 
 .about-preview {
   padding: 3rem 0;
-<<<<<<< HEAD
   background: url("background-elegant (1).jpg") center/cover no-repeat;
 }
 
-=======
-  background: url('background-elegant (1).jpg') center/cover no-repeat;
-}
-
-
->>>>>>> 9afa65d8d91e4a2952a7d6290560ebcda4abca6c
 /* ===========================================
    ABOUT PREVIEW IMAGE CARD
 ============================================ */
@@ -395,14 +360,11 @@ p {
   transition: transform 0.5s ease;
 }
 
-<<<<<<< HEAD
 .image-card:hover {
   box-shadow: 0 40px 80px #dc143c33;
   border: 5px solid rgb(147, 1, 30);
 }
 
-=======
->>>>>>> 9afa65d8d91e4a2952a7d6290560ebcda4abca6c
 .image-card:hover img {
   transform: scale(1.04);
 }
@@ -432,10 +394,7 @@ p {
   color: #ffffff;
   font-size: 1.8rem;
   line-height: 1.1;
-<<<<<<< HEAD
   text-align: left;
-=======
->>>>>>> 9afa65d8d91e4a2952a7d6290560ebcda4abca6c
 }
 
 .image-overlay p {
@@ -444,7 +403,6 @@ p {
   font-size: 1rem;
   line-height: 1.6;
   max-width: 88%;
-<<<<<<< HEAD
   text-align: left;
 }
 
@@ -541,8 +499,6 @@ p {
   font-size: 1.8rem;
   line-height: 1.1;
   text-align: left;
-=======
->>>>>>> 9afa65d8d91e4a2952a7d6290560ebcda4abca6c
 }
 
 @media (max-width: 1024px) {
@@ -560,7 +516,6 @@ p {
     max-width: 100%;
     min-height: 340px;
   }
-<<<<<<< HEAD
 
   .services-preview .services-grid {
     grid-template-columns: 1fr 1fr;
@@ -583,12 +538,6 @@ p {
 
 /* ===========================================
   KEY MILESTONES - TIMELINE
-=======
-}
-
-/* ===========================================
-   SIMPEL TIMELINE
->>>>>>> 9afa65d8d91e4a2952a7d6290560ebcda4abca6c
 ============================================ */
 .timeline {
   max-width: 800px;
@@ -746,7 +695,6 @@ p {
     gap: 1.5rem;
   }
 
-<<<<<<< HEAD
   .logo img {
     display: none;
   }
@@ -755,8 +703,6 @@ p {
     display: none;
   }
 
-=======
->>>>>>> 9afa65d8d91e4a2952a7d6290560ebcda4abca6c
   .nav-container {
     flex-direction: column;
     gap: 1.5rem;
