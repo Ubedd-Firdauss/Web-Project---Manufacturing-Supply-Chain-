@@ -746,8 +746,10 @@ p {
 ============================================ */
 /* Hero Contact */
 .hero-contact {
-  background: linear-gradient(135deg, #2d5a27 0%, #4caf50 100%);
-  color: white;
+  background:
+    linear-gradient(rgba(239, 19, 19, 0.65), rgba(138, 1, 1, 0.65)),
+    url("bg-services.jpg") center/cover no-repeat;
+  opacity: 95%;
   padding: 100px 0;
   text-align: center;
 }
@@ -776,7 +778,7 @@ p {
 /* Contact Content */
 .contact-content {
   padding: 80px 0;
-  background-color: #f8f9fa;
+  background: url("background-white.jpg") center/cover no-repeat;
 }
 
 .contact-content .container {
@@ -821,7 +823,7 @@ p {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 30px;
-  color: #2d5a27;
+  color: #841414;
   font-family: 'Manrope', sans-serif;
 }
 
@@ -855,7 +857,7 @@ p {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #4caf50;
+  border-color: #841414;
   background: white;
 }
 
@@ -876,13 +878,13 @@ p {
   top: -10px;
   left: 10px;
   font-size: 0.8rem;
-  color: #4caf50;
+  color: #841414;
   background: white;
   padding: 0 5px;
 }
 
 .btn-primary.full{
-  background: linear-gradient(135deg, #5a2727 0%, #af4c4c 100%);
+  background: linear-gradient(135deg, #d90d0d 0%, #841414 100%);
   color: white;
   padding: 15px 30px;
   border: none;
@@ -895,8 +897,9 @@ p {
 }
 
 .btn-primary:hover {
+  background: linear-gradient(135deg, #841414 0%, #d90d0d 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 35px #841414;
+  box-shadow: 0 6px 30px #841414;
 }
 
 .btn-primary.full {
@@ -915,7 +918,7 @@ p {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 30px;
-  color: #2d5a27;
+  color: #841414;
   font-family: 'Manrope', sans-serif;
 }
 
@@ -939,16 +942,31 @@ p {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #2d5a27;
+  color: #841414;
   font-family: 'Manrope', sans-serif;
 }
 
 .contact-item p {
   font-size: 1rem;
   line-height: 1.5;
-  color: #555;
+  color: black;
   margin: 0;
   font-family: 'Inter', sans-serif;
+}
+
+/* Hover effect for contact items */
+.contact-item:hover {
+  background: linear-gradient(135deg, #d90d0d, #841414);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  padding: 15px;
+  margin: -15px -15px 15px -15px;
+  box-shadow: 0 4px 30px rgba(216, 13, 13, 0.3);
+}
+
+.contact-item:hover h4,
+.contact-item:hover p {
+  color: white;
 }
 
 /* Responsive Design */
