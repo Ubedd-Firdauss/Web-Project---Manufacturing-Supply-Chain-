@@ -78,7 +78,11 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(236, 236, 236, 0.8));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(236, 236, 236, 0.8)
+  );
   backdrop-filter: blur(20px);
   z-index: 1000;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
@@ -430,8 +434,8 @@ p {
   min-height: 420px;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.14);
   transition:
-  transform 0.35s ease,
-  box-shadow 0.35s ease;
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .service-card:hover {
@@ -569,7 +573,9 @@ p {
   background: #111;
   min-height: 350px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.14);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .service-card:hover {
@@ -604,10 +610,16 @@ p {
   align-items: flex-start;
   text-align: left;
   padding: 1.5rem;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(10, 10, 10, 0.95) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(10, 10, 10, 0.95) 100%
+  );
   transform: translateY(100%);
   opacity: 0;
-  transition: transform 0.35s ease, opacity 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
 }
 
 .service-card:hover .service-overlay {
@@ -652,7 +664,7 @@ p {
   font-weight: 800;
   margin-bottom: 0.5rem;
   color: gold;
-  margin-bottom: 0.1rem
+  margin-bottom: 0.1rem;
 }
 
 .stat-item p {
@@ -663,14 +675,14 @@ p {
 }
 
 .glass-morph {
-    border-radius: 55px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.1rem 1.5rem 1rem 1.5rem;
-    margin-top: 0.1rem;
+  border-radius: 55px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.1rem 1.5rem 1rem 1.5rem;
+  margin-top: 0.1rem;
 }
 
 @media (max-width: 768px) {
@@ -711,7 +723,7 @@ p {
   text-align: center;
   margin-bottom: 50px;
   color: #2d5a27; /* Sustainable green color */
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 .testimonials-grid {
@@ -726,7 +738,9 @@ p {
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border-left: 4px solid gold; /* Green accent */
 }
 
@@ -741,7 +755,7 @@ p {
   margin-bottom: 20px;
   color: #555;
   font-style: italic;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .testimonial-author {
@@ -753,7 +767,7 @@ p {
   font-weight: 600;
   color: #dc143c;
   font-size: 1rem;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 /* FOOTER */
@@ -781,14 +795,14 @@ p {
   font-weight: 700;
   margin-bottom: 10px;
   color: #4caf50; /* Green accent */
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 .footer-brand p {
   font-size: 1rem;
   line-height: 1.5;
   color: #ccc;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .footer-links h4 {
@@ -796,7 +810,7 @@ p {
   font-weight: 600;
   margin-bottom: 15px;
   color: #fff;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .footer-links ul {
@@ -813,7 +827,7 @@ p {
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .footer-links a:hover {
@@ -830,7 +844,7 @@ p {
   font-size: 0.9rem;
   color: #aaa;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Responsive Design */
@@ -838,14 +852,260 @@ p {
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-content {
     flex-direction: column;
     text-align: center;
   }
-  
-  .footer-brand, .footer-links {
+
+  .footer-brand,
+  .footer-links {
     margin-bottom: 30px;
+  }
+}
+
+/* ===========================================
+PHILOSOPHY STYLE
+============================================ */
+.philosophy {
+  padding: 100px 0;
+  background:
+    linear-gradient(rgba(201, 26, 26, 0.65), rgba(104, 0, 0, 0.65)),
+    url("background-perusahaan.png") center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.philosophy::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.page-title-services {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  text-align: center;
+  margin: 6rem auto 80px auto; /* ✅ Fixed: auto untuk rata tengah */
+  background: linear-gradient(135deg, #ffffff 0%, #cad6fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  display: block; /* ✅ Pastikan block element */
+}
+
+.page-title-services::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ffffff, #cad6fd);
+  border-radius: 2px;
+}
+
+/* Philosophy Grid - FULL WIDTH CONTENT */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  max-width: 900px;
+  margin: 0 auto; /* ✅ Rata tengah */
+  text-align: center;
+  align-items: center; /* ✅ Vertikal center */
+}
+
+.philosophy-content {
+  position: relative;
+  padding: 0;
+  width: 100%; /* ✅ Full width */
+  margin: 0 auto; /* ✅ Rata tengah */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ Rata tengah horizontal */
+  justify-content: center; /* ✅ Rata tengah vertikal */
+}
+
+.philosophy-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: gold;
+  max-width: 600px;
+  line-height: 1.2;
+  margin-top: -40px;
+}
+
+.philosophy-content p {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  color: #ffffff;
+  margin: 0 auto 60px auto; /* ✅ Fixed: auto untuk rata tengah */
+  padding: 0 20px; /* ✅ Padding simetris */
+}
+
+/* Values Grid - FULL WIDTH & PERFECT CENTER */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto; /* ✅ Rata tengah */
+  justify-content: center; /* ✅ Grid items rata tengah */
+  padding: 0 20px; /* ✅ Padding simetris */
+}
+
+.value-item {
+  position: relative;
+  padding: 35px 30px;
+  background: rgba(255, 255, 255, 0.95); /* ✅ Lebih opaque untuk kontras */
+  border-radius: 24px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+  min-height: 180px;
+}
+
+.value-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 215, 0, 0.2),
+    transparent
+  ); /* ✅ Gold shimmer */
+  transition: left 0.7s;
+}
+
+.value-item:hover::before {
+  left: 100%;
+}
+
+.value-item:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow:
+    0 30px 60px -15px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.2),
+    0 25px 50px -12px rgba(255, 215, 0, 0.3); /* ✅ Gold shadow */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.98),
+    rgba(255, 255, 255, 0.95)
+  );
+  border-color: rgba(255, 215, 0, 0.6); /* ✅ Gold border */
+}
+
+.value-item h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1e293b;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+  margin: 0 auto 15px auto; /* ✅ Rata tengah */
+}
+
+.value-item:hover h4 {
+  color: gold; /* ✅ Gold color on hover */
+}
+
+.value-item p {
+  font-size: 1.05rem;
+  color: #64748b;
+  line-height: 1.7;
+  margin: 0 auto; /* ✅ Rata tengah */
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  flex-grow: 1; /* ✅ Push ke bawah jika perlu */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .values-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .philosophy {
+    padding: 70px 0;
+  }
+
+  .page-title-services {
+    margin: 4rem auto 60px auto;
+  }
+
+  .philosophy-content h2 {
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+  }
+
+  .philosophy-content p {
+    font-size: 1.15rem;
+    margin-bottom: 50px;
+    padding: 0 15px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 450px;
+    padding: 0 15px;
+  }
+
+  .value-item {
+    padding: 30px 25px;
+    min-height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .philosophy-content h2 {
+    font-size: 1.9rem;
+    padding: 0 10px;
+  }
+
+  .philosophy-content p {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  .value-item {
+    padding: 25px 20px;
+    min-height: 150px;
   }
 }
 
@@ -919,7 +1179,7 @@ p {
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 20px;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 .hero-contact .hero-subtitle {
@@ -927,7 +1187,7 @@ p {
   line-height: 1.6;
   max-width: 600px;
   margin: 0 auto;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Contact Content */
@@ -948,7 +1208,7 @@ p {
   text-align: center;
   margin-bottom: 60px;
   color: #2d5a27;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 .contact-grid {
@@ -963,9 +1223,9 @@ p {
 .page-title {
   font-size: 2.8rem;
   font-weight: 800;
-  margin-top : 5rem;
+  margin-top: 5rem;
   color: white;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
 }
 .contact-form-container {
   background: white;
@@ -979,7 +1239,7 @@ p {
   font-weight: 600;
   margin-bottom: 30px;
   color: #841414;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .contact-form {
@@ -1004,7 +1264,7 @@ p {
   border: 2px solid #e0e0e0;
   border-radius: 8px;
   font-size: 1rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   transition: border-color 0.3s ease;
   background: #fafafa;
 }
@@ -1023,7 +1283,7 @@ p {
   color: #666;
   pointer-events: none;
   transition: all 0.3s ease;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .form-group input:focus + label,
@@ -1038,7 +1298,7 @@ p {
   padding: 0 5px;
 }
 
-.btn-primary.full{
+.btn-primary.full {
   background: linear-gradient(135deg, #d90d0d 0%, #841414 100%);
   color: white;
   padding: 15px 30px;
@@ -1047,8 +1307,10 @@ p {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-family: 'Manrope', sans-serif;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  font-family: "Manrope", sans-serif;
 }
 
 .btn-primary:hover {
@@ -1074,7 +1336,7 @@ p {
   font-weight: 600;
   margin-bottom: 30px;
   color: #841414;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .contact-item {
@@ -1098,7 +1360,7 @@ p {
   font-weight: 600;
   margin-bottom: 5px;
   color: #841414;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .contact-item p {
@@ -1106,7 +1368,7 @@ p {
   line-height: 1.5;
   color: black;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Hover effect for contact items */
@@ -1130,11 +1392,11 @@ p {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  
+
   .hero-contact .page-title {
     font-size: 2.5rem;
   }
-  
+
   .contact-content .section-title {
     font-size: 2rem;
   }
