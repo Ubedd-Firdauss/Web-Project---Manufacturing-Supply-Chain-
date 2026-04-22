@@ -175,7 +175,7 @@ p {
   overflow: hidden;
 }
 
-.hero-bg {
+.background-hero {
   position: absolute;
   inset: 0;
   background:
@@ -533,6 +533,161 @@ p {
 
   .service-card {
     min-height: auto;
+  }
+}
+
+/* ===========================================
+   SERVICES FULL SECTION
+============================================ */
+.hero-services {
+  background:
+    linear-gradient(rgba(220, 20, 60, 0.65), rgba(138, 1, 1, 0.65)),
+    url("manufacturing-proses.png") center/cover no-repeat;
+  opacity: 95%;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.services-full {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #f7f7f7 0%, #e0e0e0 100%);
+}
+
+.services-grid-full {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.service-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #111;
+  min-height: 350px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.14);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.card-image {
+  min-height: 200px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.service-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  padding: 1.5rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(10, 10, 10, 0.95) 100%);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.service-card:hover .service-overlay {
+  transform: translateY(0);
+  opacity: 1;
+  box-shadow: inset 0 0 50px rgba(220, 20, 60, 0.5);
+}
+
+.service-overlay h3 {
+  margin: 0 0 0.5rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.service-overlay p {
+  margin: 0;
+  color: #ececec;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 90%;
+  text-align: left;
+}
+
+/* Hero Stats */
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  color: white;
+}
+
+.stat-item h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: gold;
+  margin-bottom: 0.1rem
+}
+
+.stat-item p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0;
+  color: #e5e5e5;
+}
+
+.glass-morph {
+    border-radius: 55px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem 1.5rem 1rem 1.5rem;
+    margin-top: 0.1rem;
+}
+
+@media (max-width: 768px) {
+  .services-grid-full {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: 300px;
+  }
+
+  .hero-stats {
+    gap: 1.5rem;
+  }
+
+  .stat-item h3 {
+    font-size: 1.8rem;
   }
 }
 
