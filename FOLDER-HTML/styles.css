@@ -1,14 +1,14 @@
+/* ===========================================
+  GENERAL SETTINGS
+============================================ */
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.7;
-  color: #333;
-  background: #fff;
 }
 
 h1 {
@@ -18,7 +18,6 @@ h1 {
 }
 h2 {
   font-size: 2.8rem;
-  font-weight: 700;
   line-height: 1.2;
 }
 h3 {
@@ -36,43 +35,20 @@ p {
   color: #666;
 }
 
-.section-title {
-  font-size: 3rem;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 2.5rem;
-  background: linear-gradient(135deg, #dc143c, #b22222);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  position: relative;
-}
-
-.section-title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, #dc143c, #b22222);
-  margin: 1rem auto 0;
-  border-radius: 2px;
-}
-
 /* ===========================================
    CONTAINER & SPACING
 ============================================ */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
 
 .section-padding {
   padding: 100px 0;
 }
 
 /* ===========================================
-   NAVBAR - CLEAN WHITE
+   SECTION HOME CSS STYLE START
+============================================ */
+
+/* ===========================================
+   NAVIGTION BAR START
 ============================================ */
 .navbar {
   position: fixed;
@@ -166,9 +142,12 @@ p {
   background: gold;
   color: black;
 }
+/* ===========================================
+   NAVIGTION BAR END
+============================================ */
 
 /* ===========================================
-   HERO SECTION
+   HERO SECTION START
 ============================================ */
 .hero {
   position: relative;
@@ -241,9 +220,6 @@ p {
   flex-wrap: wrap;
 }
 
-/* ===========================================
-   BUTTONS
-============================================ */
 .btn-primary {
   padding: 1rem;
   margin-top: 0.5rem;
@@ -298,6 +274,27 @@ p {
   box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
 }
 
+
+/* ===========================================
+HERO SECTION END
+============================================ */
+
+/* ===========================================
+ABOUT PREVIEW START
+============================================ */
+.about-preview {
+  padding: 3rem 0;
+  background: url("background-elegant (1).jpg") center/cover no-repeat;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .btn-outline {
   background: #dc143c;
   color: white;
@@ -319,27 +316,6 @@ p {
   text-shadow: gold 0px 0px 10px;
   box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
 }
-
-/* ===========================================
-   GRID SYSTEMS
-============================================ */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.about-preview {
-  padding: 3rem 0;
-  background: url("background-elegant (1).jpg") center/cover no-repeat;
-}
-
-/* ===========================================
-   ABOUT PREVIEW IMAGE CARD
-============================================ */
 .about-image {
   display: flex;
   justify-content: center;
@@ -410,8 +386,13 @@ p {
   text-align: left;
 }
 
-/* ABOUT PREVIEW IMAGE CARD */
+/* ===========================================
+    ABOUT PREVIEW END
+============================================ */
 
+/* ===========================================
+   SERVICES PREVIEW START
+============================================ */
 .services-preview {
   padding: 4.5rem 0 5rem;
   background: #f7f7f7;
@@ -504,207 +485,13 @@ p {
   line-height: 1.1;
   text-align: left;
 }
-
-@media (max-width: 1024px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    text-align: center;
-  }
-
-  .about-image {
-    justify-content: center;
-  }
-
-  .image-card {
-    max-width: 100%;
-    min-height: 340px;
-  }
-
-  .services-preview .services-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .service-card {
-    min-height: auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .services-preview .services-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .service-card {
-    min-height: auto;
-  }
-}
+/* ===========================================
+   SERVICE PREVIEW END
+============================================ */
 
 /* ===========================================
-   SERVICES FULL SECTION
+   TESTIMONIALS SECTION START
 ============================================ */
-.hero-services {
-  background:
-    linear-gradient(rgba(220, 20, 60, 0.65), rgba(138, 1, 1, 0.65)),
-    url("manufacturing-proses.png") center/cover no-repeat;
-  opacity: 95%;
-  padding: 100px 0;
-  text-align: center;
-}
-
-.services-full {
-  padding: 80px 0;
-  background: linear-gradient(180deg, #f7f7f7 0%, #e0e0e0 100%);
-}
-
-.services-grid-full {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  align-items: stretch;
-}
-
-.service-card {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 20px;
-  background: #111;
-  min-height: 350px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.14);
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-}
-
-.card-image {
-  min-height: 200px;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
-.card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-.service-card:hover .card-image img {
-  transform: scale(1.05);
-}
-
-.service-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  text-align: left;
-  padding: 1.5rem;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(10, 10, 10, 0.95) 100%
-  );
-  transform: translateY(100%);
-  opacity: 0;
-  transition:
-    transform 0.35s ease,
-    opacity 0.35s ease;
-}
-
-.service-card:hover .service-overlay {
-  transform: translateY(0);
-  opacity: 1;
-  box-shadow: inset 0 0 50px rgba(220, 20, 60, 0.5);
-}
-
-.service-overlay h3 {
-  margin: 0 0 0.5rem;
-  color: #ffffff;
-  font-size: 1.5rem;
-  line-height: 1.1;
-  text-align: left;
-}
-
-.service-overlay p {
-  margin: 0;
-  color: #ececec;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 90%;
-  text-align: left;
-}
-
-/* Hero Stats */
-.hero-stats {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-
-.stat-item {
-  text-align: center;
-  color: white;
-}
-
-.stat-item h3 {
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
-  color: gold;
-  margin-bottom: 0.1rem;
-}
-
-.stat-item p {
-  font-size: 0.9rem;
-  font-weight: 300;
-  margin: 0;
-  color: #e5e5e5;
-}
-
-.glass-morph {
-  border-radius: 55px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.1rem 1.5rem 1rem 1.5rem;
-  margin-top: 0.1rem;
-}
-
-@media (max-width: 768px) {
-  .services-grid-full {
-    grid-template-columns: 1fr;
-  }
-
-  .service-card {
-    min-height: 300px;
-  }
-
-  .hero-stats {
-    gap: 1.5rem;
-  }
-
-  .stat-item h3 {
-    font-size: 1.8rem;
-  }
-}
-
-/* TESTIMONIALS */
-/* Testimonials Section */
 .testimonials {
   padding: 80px 0;
   background-color: #f8f9fa;
@@ -722,7 +509,6 @@ p {
   font-weight: 700;
   text-align: center;
   margin-bottom: 50px;
-  color: #2d5a27; /* Sustainable green color */
   font-family: "Sora", sans-serif;
 }
 
@@ -769,103 +555,57 @@ p {
   font-size: 1rem;
   font-family: "Manrope", sans-serif;
 }
+/* ===========================================
+   TESTIMONIALS END
+============================================ */
 
-/* FOOTER */
-.footer {
-  background-color: #1a1a1a;
-  color: #fff;
-  padding: 60px 0 20px;
-}
 
-.footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
-.footer-brand h3 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #4caf50; /* Green accent */
-  font-family: "Sora", sans-serif;
-}
-
-.footer-brand p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #ccc;
-  font-family: "Inter", sans-serif;
-}
-
-.footer-links h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #fff;
-  font-family: "Manrope", sans-serif;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  margin-bottom: 8px;
-}
-
-.footer-links a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-  font-family: "Inter", sans-serif;
-}
-
-.footer-links a:hover {
-  color: #4caf50;
-}
-
-.footer-bottom {
-  border-top: 1px solid #333;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.footer-bottom p {
-  font-size: 0.9rem;
-  color: #aaa;
-  margin: 0;
-  font-family: "Inter", sans-serif;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .testimonials-grid {
+/* RESPONSIVE DESIGN FOR HOME SECTION */
+@media (max-width: 1024px) {
+  .about-grid {
     grid-template-columns: 1fr;
-  }
-
-  .footer-content {
-    flex-direction: column;
+    gap: 2.5rem;
     text-align: center;
   }
 
-  .footer-brand,
-  .footer-links {
-    margin-bottom: 30px;
+  .about-image {
+    justify-content: center;
+  }
+
+  .image-card {
+    max-width: 100%;
+    min-height: 340px;
+  }
+
+  .services-preview .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-preview .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: auto;
   }
 }
 
 /* ===========================================
-PHILOSOPHY STYLE
+    SECTION HOME CSS STYLE END
+============================================ */
+
+/* ===========================================
+SECTION ABOUT CSS STYLE START
+============================================ */
+
+/* ===========================================
+PHILOSOPHY START
 ============================================ */
 .philosophy {
   padding: 100px 0;
@@ -883,14 +623,6 @@ PHILOSOPHY STYLE
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: relative;
-  z-index: 2;
 }
 
 .page-title-services {
@@ -914,11 +646,10 @@ PHILOSOPHY STYLE
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, #ffffff, #cad6fd);
+  background: gold;
   border-radius: 2px;
 }
 
-/* Philosophy Grid - FULL WIDTH CONTENT */
 .philosophy-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -957,7 +688,6 @@ PHILOSOPHY STYLE
   padding: 0 20px; 
 }
 
-/* Values Grid - FULL WIDTH & PERFECT CENTER */
 .values-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1046,7 +776,7 @@ PHILOSOPHY STYLE
   flex-grow: 1;
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN FOR PHILOSOPHY SECTION */
 @media (max-width: 1024px) {
   .values-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1108,11 +838,13 @@ PHILOSOPHY STYLE
     min-height: 150px;
   }
 }
+/* ===========================================
+PHILOSOPHY END
+============================================ */
 
 /* ===========================================
-VISSION & MISSION
+VISSION & MISSION START
 ============================================ */
-/* Vision Mission Section */
 .vision-mission {
   padding: 120px 0;
   background: linear-gradient(135deg, rgba(220, 20, 60, 0.1) 0%, rgba(139, 0, 0, 0.05) 100%);
@@ -1132,40 +864,18 @@ VISSION & MISSION
   pointer-events: none;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: relative;
-  z-index: 2;
-}
-
 .section-title {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  font-weight: 700;
-  text-align: center;
-  margin: 0 auto 80px auto;
   background: linear-gradient(135deg, #dc143c 100%, #ff4040 0%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto 90px auto;
+  color: #1e293b;
   position: relative;
   max-width: 600px;
 }
 
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 4px;
-  background: linear-gradient(90deg, #dc143c, #ff4040);
-  border-radius: 2px;
-}
-
-/* VM Grid */
 .vm-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1267,7 +977,7 @@ VISSION & MISSION
   animation: pulse 2s infinite;
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN FOR VISSION & MISSION SECTION */
 @media (max-width: 1024px) {
   .vm-grid {
     grid-template-columns: 1fr;
@@ -1283,11 +993,6 @@ VISSION & MISSION
 @media (max-width: 768px) {
   .vision-mission {
     padding: 80px 0;
-  }
-  
-  .section-title {
-    margin-bottom: 60px;
-    font-size: 2.5rem;
   }
   
   .vm-card {
@@ -1319,18 +1024,16 @@ VISSION & MISSION
     padding: 35px 25px;
   }
   
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 50px;
-  }
-  
   .vm-grid {
     gap: 30px;
   }
 }
+/* ===========================================
+VISSION & MISSION END
+============================================ */
 
 /* ===========================================
-  KEY MILESTONES - TIMELINE
+  KEY MILESTONES START
 ============================================ */
 .timeline {
   max-width: 800px;
@@ -1376,11 +1079,13 @@ VISSION & MISSION
   color: #333;
   margin-bottom: 0.5rem;
 }
+/* ===========================================
+  KEY MILESTONES END
+============================================ */
 
 /* ===========================================
-RESOURCES
+RESOURCES START
 ============================================ */
-/* Resources Section */
 .resources {
   padding: 120px 0;
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
@@ -1391,21 +1096,11 @@ RESOURCES
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  position: relative;
-  z-index: 2;
-}
-
-.section-title {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  font-weight: 700;
-  text-align: center;
-  margin: 0 auto 90px auto;
-  color: #1e293b;
-  position: relative;
-  max-width: 600px;
 }
 
 .section-title::after {
+  display: block;
+  margin: 1rem auto 0;
   content: '';
   position: absolute;
   bottom: -15px;
@@ -1417,7 +1112,6 @@ RESOURCES
   border-radius: 2px;
 }
 
-/* Resources Grid */
 .resources-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -1489,14 +1183,13 @@ RESOURCES
   font-weight: 700;
 }
 
-/* Subtle hover - TIDAK BERLEBIHAN */
 .resource-category:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
   border-color: rgba(220, 20, 60, 0.2);
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN FOR RESOURCES SECTION */
 @media (max-width: 1024px) {
   .resources-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1511,11 +1204,6 @@ RESOURCES
 @media (max-width: 768px) {
   .resources {
     padding: 80px 0;
-  }
-  
-  .section-title {
-    margin-bottom: 70px;
-    font-size: 2.5rem;
   }
   
   .resources-grid {
@@ -1557,11 +1245,200 @@ RESOURCES
     padding: 30px 20px;
   }
 }
+/* ===========================================
+  RESOURCES END
+============================================ */
+/* ===========================================
+  SECTION ABOUT CSS STYLE END
+============================================ */
+
 
 /* ===========================================
-   CONTACT FORM
+   SECTION SERVICES CSS STYLE START
 ============================================ */
-/* Hero Contact */
+/* ===========================================
+    SERVICES PREVIEW START
+============================================ */
+.hero-services {
+  background:
+    linear-gradient(rgba(220, 20, 60, 0.65), rgba(138, 1, 1, 0.65)),
+    url("manufacturing-proses.png") center/cover no-repeat;
+  opacity: 95%;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.services-full {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #f7f7f7 0%, #e0e0e0 100%);
+}
+
+.services-grid-full {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.glass-morph {
+  border-radius: 55px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.1rem 1.5rem 1rem 1.5rem;
+  margin-top: 0.1rem;
+}
+/* ===========================================
+    SERVICES PREVIEW END
+============================================ */
+
+/* ===========================================
+    SERVICES CARD PREVIEW START
+============================================ */
+.service-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #111;
+  min-height: 350px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.14);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.card-image {
+  min-height: 200px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.service-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  padding: 1.5rem;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(10, 10, 10, 0.95) 100%
+  );
+  transform: translateY(100%);
+  opacity: 0;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.service-card:hover .service-overlay {
+  transform: translateY(0);
+  opacity: 1;
+  box-shadow: inset 0 0 50px rgba(220, 20, 60, 0.5);
+}
+
+.service-overlay h3 {
+  margin: 0 0 0.5rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.service-overlay p {
+  margin: 0;
+  color: #ececec;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 90%;
+  text-align: left;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  color: white;
+}
+
+.stat-item h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: gold;
+  margin-bottom: 0.1rem;
+}
+
+.stat-item p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0;
+  color: #e5e5e5;
+}
+
+/* ===========================================
+    SERVICES CARD PREVIEW END
+============================================ */
+
+/* RESPONSIVE DESIGN FOR SERVICES SECTION */
+@media (max-width: 768px) {
+  .services-grid-full {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: 300px;
+  }
+
+  .hero-stats {
+    gap: 1.5rem;
+  }
+
+  .stat-item h3 {
+    font-size: 1.8rem;
+  }
+}
+/* ===========================================
+    SERVICES CSS STYLE END
+============================================ */
+
+
+/* ===========================================
+   CONTACT CSS STYLE START
+============================================ */
+/* ===========================================
+   HERO CONTACT START
+============================================ */
 .hero-contact {
   background:
     linear-gradient(rgba(239, 19, 19, 0.65), rgba(138, 1, 1, 0.65)),
@@ -1591,8 +1468,13 @@ RESOURCES
   margin: 0 auto;
   font-family: "Inter", sans-serif;
 }
+/* ===========================================
+   HERO CONTACT END
+============================================ */
 
-/* Contact Content */
+/* ===========================================
+    CONTACT CONTENT START
+============================================ */
 .contact-content {
   padding: 80px 0;
   background: url("background-white.jpg") center/cover no-repeat;
@@ -1609,7 +1491,6 @@ RESOURCES
   font-weight: 700;
   text-align: center;
   margin-bottom: 60px;
-  color: #2d5a27;
   font-family: "Sora", sans-serif;
 }
 
@@ -1619,9 +1500,13 @@ RESOURCES
   gap: 60px;
   align-items: start;
 }
+/* ===========================================
+    CONTACT CONTENT END
+============================================ */
 
-/* Contact Form */
-
+/* ===========================================
+    CONTACT FORM START
+============================================ */
 .page-title {
   font-size: 2.8rem;
   font-weight: 800;
@@ -1724,8 +1609,13 @@ RESOURCES
 .btn-primary.full {
   width: 100%;
 }
+/* ===========================================
+    CONTACT FORM END
+============================================ */
 
-/* Contact Info */
+/* ===========================================
+    CONTACT INFO START
+============================================ */
 .contact-info {
   background: white;
   padding: 40px;
@@ -1787,8 +1677,11 @@ RESOURCES
 .contact-item:hover p {
   color: white;
 }
+/* ===========================================
+    CONTACT INFO END
+============================================ */
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN FOR CONTACT */
 @media (max-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr;
@@ -1803,9 +1696,12 @@ RESOURCES
     font-size: 2rem;
   }
 }
+/* ===========================================
+    CONTACT CSS STYLE END
+============================================ */
 
 /* ===========================================
-   FOOTER
+   FOOTER CSS STYLE START
 ============================================ */
 .footer {
   background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
@@ -1918,7 +1814,6 @@ RESOURCES
   transition: all 0.3s ease;
 }
 
-/* Social Media Links */
 .footer-social .social-links {
   display: flex;
   gap: 15px;
@@ -1962,7 +1857,7 @@ RESOURCES
   line-height: 1.5;
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN FOR FOOTER */
 @media (max-width: 768px) {
   .footer {
     padding: 3rem 0 1.5rem;
@@ -2004,6 +1899,10 @@ RESOURCES
     font-size: 0.9rem;
   }
 }
+
+/* ===========================================
+   FOOTER CSS STYLE END
+============================================ */
 
 /* ===========================================
    RESPONSIVE - PERFECT MOBILE
