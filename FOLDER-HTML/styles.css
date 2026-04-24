@@ -36,14 +36,6 @@ p {
 }
 
 /* ===========================================
-   CONTAINER & SPACING
-============================================ */
-
-.section-padding {
-  padding: 100px 0;
-}
-
-/* ===========================================
    SECTION HOME CSS STYLE START
 ============================================ */
 
@@ -221,6 +213,9 @@ p {
 }
 
 .btn-primary {
+  background: linear-gradient(135deg, #dc143c, #b22222);
+  color: white;
+  box-shadow: 0 6px 20px rgba(220, 20, 60, 0.25);
   padding: 1rem;
   margin-top: 0.5rem;
   border-radius: 50px;
@@ -236,6 +231,8 @@ p {
   gap: 0.5rem;
 }
 .btn-secondary {
+  background: gold;
+  color: black;
   padding: 1rem;
   margin-top: 0.5rem;
   border-radius: 50px;
@@ -249,22 +246,11 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, #dc143c, #b22222);
-  color: white;
-  box-shadow: 0 6px 20px rgba(220, 20, 60, 0.25);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 30px rgba(220, 20, 60, 0.35);
-}
-
-.btn-secondary {
-  background: gold;
-  color: black;
 }
 
 .btn-secondary:hover {
@@ -527,7 +513,7 @@ ABOUT PREVIEW START
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  border-left: 4px solid gold; /* Green accent */
+  border-left: 4px solid gold;
 }
 
 .testimonial-card:hover {
@@ -1051,7 +1037,7 @@ VISSION & MISSION END
 }
 
 .timeline-item:hover {
-  border-left-color: #b22222;
+  border-left-color: gold;
   transform: translateX(10px);
 }
 
@@ -1069,6 +1055,12 @@ VISSION & MISSION END
   margin-right: 2rem;
   flex-shrink: 0;
   box-shadow: 0 5px 15px rgba(220, 20, 60, 0.3);
+}
+
+.timeline-year:hover {
+  background: gold;
+  color: black;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
 }
 
 .timeline-content {
@@ -1127,8 +1119,8 @@ RESOURCES START
   border: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease; /* Hanya subtle transition */
-  height: 100%; /* Sama tinggi */
+  transition: all 0.3s ease;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -1187,6 +1179,7 @@ RESOURCES START
   transform: translateY(-5px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
   border-color: rgba(220, 20, 60, 0.2);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(220, 220, 220, 0.9));
 }
 
 /* RESPONSIVE DESIGN FOR RESOURCES SECTION */
@@ -1574,9 +1567,7 @@ RESOURCES START
 }
 
 .form-group input:focus + label,
-.form-group input:not(:placeholder-shown) + label,
-.form-group textarea:focus + label,
-.form-group textarea:not(:placeholder-shown) + label {
+.form-group textarea:focus + label {
   top: -10px;
   left: 10px;
   font-size: 0.8rem;
@@ -1905,7 +1896,7 @@ RESOURCES START
 ============================================ */
 
 /* ===========================================
-   RESPONSIVE - PERFECT MOBILE
+   RESPONSIVE - PERFECT MOBILE 
 ============================================ */
 @media (max-width: 1024px) {
   .grid-2 {
@@ -1991,20 +1982,4 @@ RESOURCES START
   .contact-form-container {
     padding: 2.5rem 2rem;
   }
-}
-
-/* ===========================================
-   UTILITIES
-============================================ */
-.mb-1 {
-  margin-bottom: 1rem;
-}
-.mb-2 {
-  margin-bottom: 2rem;
-}
-.mb-3 {
-  margin-bottom: 3rem;
-}
-.text-center {
-  text-align: center;
 }
