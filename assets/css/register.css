@@ -1,0 +1,131 @@
+/* ===========================================
+   REGISTER PAGE
+============================================ */
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(15px);
+  position: relative;
+  overflow: hidden;
+}
+
+.register-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  padding: 40px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.register-title {
+  text-align: center;
+  color: #dc143c;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.register-form input:focus {
+  border-color: #dc143c;
+  box-shadow: 0 0 10px rgba(220,20,60,.2);
+}
+
+.register-btn {
+  background: linear-gradient(
+    135deg,
+    #dc143c,
+    #b22222
+  );
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.register-btn:hover {
+  background: gold;
+  color: black;
+  transform: translateY(-2px);
+}
+
+.register-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: url("../images/inventory.jpeg") center center/cover no-repeat;
+
+  filter: blur(8px);
+  transform: scale(1.2);
+
+  z-index: 0;
+}
+
+/* ===========================================
+   RESPONSIVE REGISTER
+============================================ */
+
+@media (max-width: 768px) {
+
+  .register-container {
+    width: 90%;
+    padding: 30px 25px;
+  }
+
+  .register-title {
+    font-size: 1.7rem;
+  }
+
+  .register-form input {
+    padding: 14px;
+  }
+
+  .register-btn {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .register-container {
+    width: 95%;
+    padding: 25px 20px;
+  }
+
+  .register-title {
+    font-size: 1.5rem;
+  }
+}
