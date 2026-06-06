@@ -1,3 +1,39 @@
+<?php
+
+require 'config/db.php';
+
+if(isset($_POST['send'])){
+
+    $nama = $_POST['name'];
+    $email = $_POST['email'];
+    $company = $_POST['company'];
+    $message = $_POST['message'];
+
+    mysqli_query(
+        $conn,
+        "INSERT INTO contact_messages
+        (
+            nama,
+            email,
+            company,
+            message
+        )
+
+        VALUES
+
+        (
+            '$nama',
+            '$email',
+            '$company',
+            '$message'
+        )"
+    );
+
+    $success = true;
+}
+
+?>
+
 <!doctype html>
 <html lang="id">
 
@@ -40,7 +76,12 @@
         <!-- Contact Form -->
         <div class="contact-form-container">
           <h3 class="form-title">Send Message</h3>
-          <form class="contact-form">
+          <?php if(isset($success)): ?>
+          <div class="success-message">
+            Pesan berhasil dikirim.
+          </div>
+          <?php endif; ?>
+          <form class="contact-form" action="contact.php" method="POST">
             <div class="form-group">
               <input type="text" id="name" name="name" />
               <label for="name">Name</label>
@@ -57,7 +98,7 @@
               <input type="text" id="message" name="message" />
               <label for="message">Message</label>
             </div>
-            <button type="submit" class="btn-primary full">
+            <button type="submit" name="send" class="btn-primary full">
               Send Message
             </button>
           </form>
