@@ -67,7 +67,7 @@ if (isset($_POST['cari'])) {
 </head>
 
 <body>
-  <!-- Navbar -->
+  <!-- Section Navbar -->
   <nav class="navbar">
     <?php include 'includes/header.php'; ?>
   </nav>
