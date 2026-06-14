@@ -32,15 +32,11 @@ if (session_status() == PHP_SESSION_NONE) {
         <a href="services.php" class="nav-link">Services</a>
       </li>
 
-      <li>
-        <a href="tracking.php" class="nav-link">Tracking</a>
-      </li>
-
       <?php if (isset($_SESSION['login'])): ?>
 
-        <li>
-          <span class="user-name">
-            <?php
+      <li>
+        <span class="user-name">
+          <?php
             if (isset($_SESSION['admin_nama'])) {
               echo $_SESSION['admin_nama'];
             } elseif (isset($_SESSION['nama'])) {
@@ -49,28 +45,34 @@ if (session_status() == PHP_SESSION_NONE) {
               echo 'Guest';
             }
             ?>
-          </span>
-        </li>
+        </span>
+      </li>
 
-        <li>
-          <a href="logout.php" class="nav-link">
-            Logout
-          </a>
-        </li>
+      <li>
+        <a href="client/dashboard_client.php" class="nav-link">
+          Dashboard
+        </a>
+      </li>
+
+      <li>
+        <a href="logout.php" class="nav-link">
+          Logout
+        </a>
+      </li>
 
       <?php else: ?>
 
-        <li>
-          <a href="login.php" class="nav-link">
-            Login
-          </a>
-        </li>
+      <li>
+        <a href="login.php" class="nav-link">
+          Login
+        </a>
+      </li>
 
-        <li>
-          <a href="register.php" class="nav-link">
-            Register
-          </a>
-        </li>
+      <li>
+        <a href="register.php" class="nav-link">
+          Register
+        </a>
+      </li>
 
       <?php endif; ?>
 

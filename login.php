@@ -24,8 +24,8 @@ if(isset($_POST['login'])){
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['nama'] = $user['nama'];
         $_SESSION['role'] = $user['role'];
-
-        header("Location: tracking.php");
+        $_SESSION['profile_picture'] = $user['profile_picture'];
+        header("Location: client/dashboard_client.php");
         exit;
     }
 
@@ -43,6 +43,12 @@ if(isset($_POST['login'])){
 
   <link rel="stylesheet" href="assets/css/login.css">
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 </head>
 
 <body>

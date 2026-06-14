@@ -71,11 +71,31 @@ if (isset($_POST['update'])) {
   <meta charset="UTF-8">
   <title>Edit Order - Admin</title>
   <link rel="stylesheet" href="css/admin.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
   <?php include 'includes/sidebar.php'; ?>
+  <!-- Hamburger Menu -->
+  <div class="hamburger" onclick="toggleSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Overlay (Klik untuk tutup sidebar) -->
+  <div class="overlay" onclick="toggleSidebar()"></div>
+
+  <script>
+  function toggleSidebar() {
+    document.querySelector('.sidebar').classList.toggle('active');
+    document.querySelector('.overlay').classList.toggle('active');
+    document.querySelector('.hamburger').classList.toggle('active');
+  }
+  </script>
 
   <div class="content">
     <h1>Edit Data Order</h1>
