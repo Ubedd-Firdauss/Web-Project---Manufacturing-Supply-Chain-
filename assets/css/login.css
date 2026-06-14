@@ -1,0 +1,162 @@
+/* ===========================================
+   LOGIN PAGE
+============================================ */
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  line-height: 1.7;
+}
+.login-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.85);
+backdrop-filter: blur(15px);;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.login-title {
+  text-align: center;
+  color: #dc143c;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.login-form input:focus {
+  border-color: #dc143c;
+  box-shadow: 0 0 10px rgba(220, 20, 60, 0.2);
+}
+
+.login-btn {
+  background: linear-gradient(
+    135deg,
+    #dc143c,
+    #b22222
+  );
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: gold;
+  color: black;
+  transform: translateY(-2px);
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link a {
+  color: #dc143c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.error-msg {
+  background: #ffe5e5;
+  color: #dc143c;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.success-msg {
+  background: #e5ffe5;
+  color: #28a745;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: url("../images/background-perusahaan.png") center center/cover no-repeat;
+
+  filter: blur(8px);
+  transform: scale(1.2);
+
+  z-index: 0;
+}
+
+/* ===========================================
+   RESPONSIVE LOGIN
+============================================ */
+
+@media (max-width: 768px) {
+
+  .login-container {
+    width: 90%;
+    padding: 30px 25px;
+  }
+
+  .login-title {
+    font-size: 1.7rem;
+  }
+
+  .login-form input {
+    padding: 14px;
+  }
+
+  .login-btn {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .login-container {
+    width: 95%;
+    padding: 25px 20px;
+  }
+
+  .login-title {
+    font-size: 1.5rem;
+  }
+
+  .login-link {
+    font-size: 0.9rem;
+  }
+}
